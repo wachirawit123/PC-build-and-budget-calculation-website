@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="300" viewBox="0 0 420 300" role="img" aria-label="ID-COOLING SE-224-XT ARGB">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11181f"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00b3a4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00b3a4" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00b3a4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="300" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#00b3a4" stroke-width="1">
+    <path d="M0 40 H60 V10 H140"/><path d="M420 70 H340 V30 H270"/>
+    <path d="M0 230 H70 V280 H150"/><path d="M420 204 H350 V244"/>
+  </g>
+  <g transform="translate(42,14) scale(0.8)"><rect x="150" y="54" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="65" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="76" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="87" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="98" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="109" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="120" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="131" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="142" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="153" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="164" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="175" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/><rect x="150" y="186" width="118" height="6" rx="2" fill="#00b3a4" opacity="0.55"/>
+  <rect x="146" y="48" width="126" height="152" rx="6" fill="none" stroke="#00b3a4" stroke-width="3"/>
+  <g stroke="#9aa4b2" stroke-width="9" stroke-linecap="round">
+    <line x1="176" y1="200" x2="176" y2="236"/><line x1="209" y1="200" x2="209" y2="236"/>
+    <line x1="242" y1="200" x2="242" y2="236"/>
+  </g>
+  <rect x="152" y="234" width="114" height="26" rx="6" fill="#2b3240" stroke="#00b3a4" stroke-width="2"/>
+  <g transform="translate(86,74)">
+    <rect x="0" y="0" width="56" height="128" rx="8" fill="#1d2630" stroke="#00b3a4" stroke-width="2"/>
+    <circle cx="28" cy="64" r="24" fill="#0f141b" stroke="#00b3a4" stroke-width="2"/>
+    <g fill="#00b3a4" opacity="0.8"><ellipse cx="28" cy="48" rx="6" ry="14"/><ellipse cx="28" cy="80" rx="6" ry="14"/>
+    <ellipse cx="12" cy="64" rx="14" ry="6"/><ellipse cx="44" cy="64" rx="14" ry="6"/></g>
+  </g></g>
+  <rect x="0" y="234" width="420" height="66" fill="#000000" opacity="0.45"/>
+  <rect x="60" y="234" width="300" height="2" fill="url(#glow)"/>
+  <text x="18" y="30" font-size="13" font-weight="700" fill="#00b3a4" font-family="Consolas,monospace">ID-COOLING</text>
+  <text x="402" y="30" text-anchor="end" font-size="12" font-weight="700" fill="#8b95a4" font-family="Consolas,monospace">AIR COOLER</text>
+  <text x="210" y="266" text-anchor="middle" font-size="15" font-weight="600" fill="#eef2f7" font-family="Segoe UI,Tahoma,Arial,sans-serif">ID-COOLING SE-224-XT ARGB</text>
+</svg>

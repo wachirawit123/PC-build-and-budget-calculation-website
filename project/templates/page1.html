@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero-box tech">
+  <h1>🖥️ {{ title }}</h1>
+  <p class="lead">อุปกรณ์คอมพิวเตอร์มือหนึ่งทั้งหมดในคลังของร้าน ทบทวน888</p>
+</div>
+
+<div class="stat-grid" style="margin-bottom:16px">
+  <div class="stat"><div class="label">สินค้าที่แสดง</div><div class="value">{{ shown_count }}</div><div class="unit">จากทั้งหมด {{ all_count }} รายการ</div></div>
+  <div class="stat gold"><div class="label">มูลค่ารวมที่แสดง</div><div class="value">{{ total_price }}</div><div class="unit">บาท</div></div>
+  <div class="stat"><div class="label">ราคาเฉลี่ย</div><div class="value">{{ average_price }}</div><div class="unit">บาท / ชิ้น</div></div>
+  <div class="stat {% if out_of_stock > 0 %}bad{% else %}good{% endif %}"><div class="label">สินค้าหมด</div><div class="value">{{ out_of_stock }}</div><div class="unit">รายการ</div></div>
+</div>
+
+<form method="get" class="panel" style="margin-bottom:14px">
+  <div class="field-row">
+    <div class="field"><label>ค้นหาสินค้า (ชื่อ / ยี่ห้อ)</label>
+      <input type="text" name="q" value="{{ keyword }}" placeholder="เช่น RTX 5070, Ryzen, Kingston"></div>
+    <div class="field"><label>เรียงลำดับ</label>
+      <select name="sort">
+        <option value="name" {% if sort == 'name' %}selected{% endif %}>หมวดหมู่ / ชื่อ</option>
+        <option value="price_low" {% if sort == 'price_low' %}selected{% endif %}>ราคาน้อย → มาก</option>
+        <option value="price_high" {% if sort == 'price_high' %}selected{% endif %}>ราคามาก → น้อย</option>
+        <option value="watt" {% if sort == 'watt' %}selected{% endif %}>กินไฟมาก → น้อย</option>
+      </select></div>
+    <input type="hidden" name="cat" value="{{ selected }}">
+    <button class="btn" type="submit">ค้นหา</button>
+    <a class="btn ghost" href="{{ url_for('page', name='page1') }}">ล้างตัวกรอง</a>
+  </div>
+</form>
+
+<div class="pills">
+  <a href="{{ url_for('page', name='page1') }}?cat=all&amp;q={{ keyword }}&amp;sort={{ sort }}" class="{% if selected == 'all' %}active{% endif %}">ทั้งหมด ({{ all_count }})</a>
+  {% for c in categories %}
+  <a href="{{ url_for('page', name='page1') }}?cat={{ c.key }}&amp;q={{ keyword }}&amp;sort={{ sort }}" class="{% if selected == c.key %}active{% endif %}">{{ c.label }} ({{ c.count }})</a>
+  {% endfor %}
+</div>
+
+{% if items %}
+<div class="card-grid">
+  {% for item in items %}
+  <article class="item-card part">
+    <img src="{{ url_for('static', filename=item.picture) }}" alt="{{ item.name }}" loading="lazy">
+    <div class="body">
+      <span class="badge">{{ item.category_label }}</span>
+      <b>{{ item.name }}</b>
+      <span class="muted">{{ item.brand }} · {{ item.wattage }} W
+        {% if item.high_power %}<span class="badge bad">กินไฟสูง</span>{% endif %}</span>
+      <span class="badge {% if item.in_stock %}good{% else %}bad{% endif %}">{{ item.stock_label }}</span>
+      <span class="price">{{ item.price_text }}</span>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty">ไม่พบสินค้าที่ตรงกับเงื่อนไข — ลองเปลี่ยนคำค้นหาหรือเลือกหมวดหมู่อื่น</div>
+{% endif %}
+{% endblock %}

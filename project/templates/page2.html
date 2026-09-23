@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero-box tech">
+  <h1>➕ {{ title }}</h1>
+  <p class="lead">เพิ่มอุปกรณ์คอมพิวเตอร์ชิ้นใหม่เข้าคลัง — ขณะนี้มีสินค้าทั้งหมด {{ total_items }} รายการ</p>
+</div>
+
+<div class="two-col">
+  <form class="panel" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="add">
+    <div class="field-row">
+      <div class="field"><label>หมวดหมู่ *</label>
+        <select name="category" required>
+          <option value="">— เลือกหมวดหมู่ —</option>
+          {% for c in categories %}
+          <option value="{{ c.key }}">{{ c.label }} ({{ c.count }})</option>
+          {% endfor %}
+        </select></div>
+      <div class="field"><label>ยี่ห้อ</label>
+        <input type="text" name="brand" placeholder="เช่น ASUS, MSI, Kingston"></div>
+    </div>
+    <div class="field"><label>ชื่อสินค้า *</label>
+      <input type="text" name="name" placeholder="เช่น GeForce RTX 5070 12GB" required></div>
+    <div class="field-row">
+      <div class="field"><label>ราคา (บาท) *</label>
+        <input type="number" name="price" min="1" step="1" placeholder="12900" required></div>
+      <div class="field"><label>กำลังไฟ (Watt)</label>
+        <input type="number" name="wattage" min="0" step="1" value="0"></div>
+      <div class="field"><label>จำนวนในสต็อก</label>
+        <input type="number" name="stock" min="0" step="1" value="1"></div>
+    </div>
+    <div class="field"><label>รูปสินค้า (png / jpg / webp / svg)</label>
+      <input type="file" name="photo" accept="image/*"></div>
+    <button class="btn" type="submit">บันทึกสินค้าเข้าคลัง</button>
+    <p class="note">* จำเป็นต้องกรอก · ระบบจะตรวจชื่อซ้ำ ราคาที่ไม่ใช่ตัวเลข และราคาที่เกิน 500,000 บาทให้อัตโนมัติ</p>
+  </form>
+
+  <div class="panel">
+    <h3>จำนวนสินค้าต่อหมวดหมู่</h3>
+    {% for c in categories %}
+    <div class="sum-row"><span>{{ c.label }}</span><span class="num">{{ c.count }}</span></div>
+    {% endfor %}
+  </div>
+</div>
+
+<h2 style="margin-top:22px">สินค้าที่เพิ่งเพิ่มล่าสุด</h2>
+{% if latest %}
+<table>
+  <thead><tr><th>รูป</th><th>ชื่อสินค้า</th><th>หมวดหมู่</th><th>ยี่ห้อ</th><th class="num">ราคา</th><th class="num">สต็อก</th><th></th></tr></thead>
+  <tbody>
+    {% for item in latest %}
+    <tr>
+      <td><img class="thumb" src="{{ url_for('static', filename=item.picture) }}" alt="{{ item.name }}"></td>
+      <td><b>{{ item.name }}</b></td>
+      <td>{{ item.category_label }}</td>
+      <td>{{ item.brand or '-' }}</td>
+      <td class="num">{{ item.price_text }}</td>
+      <td class="num">{{ item.stock }}</td>
+      <td>
+        <form class="inline" method="post" onsubmit="return confirm('ลบ {{ item.name }} ออกจากคลัง?')">
+          <input type="hidden" name="action" value="delete">
+          <input type="hidden" name="id" value="{{ item.id }}">
+          <input type="hidden" name="category" value="{{ item.category }}">
+          <button class="btn small danger" type="submit">ลบ</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<div class="empty">ยังไม่มีสินค้าในคลัง — เพิ่มชิ้นแรกจากฟอร์มด้านบน</div>
+{% endif %}
+{% endblock %}

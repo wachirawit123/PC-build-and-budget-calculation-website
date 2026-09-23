@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{# home.html — หน้าแรกของร้าน ทบทวน888 #}
+{% block content %}
+<section class="hero-box tech">
+  <span class="badge gold">Computer Hardware Store</span>
+  <h1>{{ team.group.topic }}</h1>
+  <p class="lead">{{ team.group.description }}</p>
+  <p class="note">ทีม {{ team.group.name }} · หมู่เรียน {{ team.group.section }} · {{ team.members|length }} สมาชิก</p>
+</section>
+
+<section class="cards">
+  {% for p in nav %}
+  <a class="card tech-card" href="{{ url_for('page', name=p.name) }}">
+    <span class="card-kicker">{{ p.name }}</span>
+    <span class="card-title">{{ p.title }}</span>
+  </a>
+  {% endfor %}
+</section>
+
+<section class="panel" style="margin-top:18px">
+  <h3>หมวดสินค้าที่ร้านมี</h3>
+  <div class="pills">
+    <a href="{{ url_for('page', name='page1') }}?cat=cpu">ซีพียู</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=vga">การ์ดจอ</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=mainboard">เมนบอร์ด</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=ram">แรม</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=ssd">SSD</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=hdd">ฮาร์ดดิสก์</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=aio">ชุดน้ำปิด</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=aircooler">ซิงก์ลม</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=fan">พัดลม</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=psu">พาวเวอร์ซัพพลาย</a>
+    <a href="{{ url_for('page', name='page1') }}?cat=case">เคสคอม</a>
+  </div>
+</section>
+{% endblock %}

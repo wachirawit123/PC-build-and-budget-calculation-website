@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="300" viewBox="0 0 420 300" role="img" aria-label="Montech AIR 903 MAX">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101418"/><stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00c2a8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00c2a8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00c2a8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="300" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#00c2a8" stroke-width="1">
+    <path d="M0 40 H60 V10 H140"/><path d="M420 70 H340 V30 H270"/>
+    <path d="M0 230 H70 V280 H150"/><path d="M420 204 H350 V244"/>
+  </g>
+  <g transform="translate(42,14) scale(0.8)"><rect x="118" y="38" width="184" height="236" rx="12" fill="#1a1f27" stroke="#00c2a8" stroke-width="3"/>
+  <rect x="140" y="58" width="142" height="196" rx="8" fill="#0f141b" stroke="#00c2a8" stroke-width="2" opacity="0.9"/>
+  <rect x="152" y="120" width="118" height="46" rx="5" fill="#2b3240"/>
+  <rect x="152" y="176" width="86" height="30" rx="5" fill="#2b3240"/>
+  <g>
+    <circle cx="170" cy="86" r="18" fill="none" stroke="#00c2a8" stroke-width="3"/>
+    <circle cx="212" cy="86" r="18" fill="none" stroke="#00c2a8" stroke-width="3"/>
+    <circle cx="254" cy="86" r="18" fill="none" stroke="#00c2a8" stroke-width="3"/>
+  </g>
+  <rect x="152" y="218" width="118" height="26" rx="5" fill="#00c2a8" opacity="0.35"/>
+  <circle cx="292" cy="50" r="5" fill="#00c2a8"/></g>
+  <rect x="0" y="234" width="420" height="66" fill="#000000" opacity="0.45"/>
+  <rect x="60" y="234" width="300" height="2" fill="url(#glow)"/>
+  <text x="18" y="30" font-size="13" font-weight="700" fill="#00c2a8" font-family="Consolas,monospace">MONTECH</text>
+  <text x="402" y="30" text-anchor="end" font-size="12" font-weight="700" fill="#8b95a4" font-family="Consolas,monospace">PC CASE</text>
+  <text x="210" y="266" text-anchor="middle" font-size="15" font-weight="600" fill="#eef2f7" font-family="Segoe UI,Tahoma,Arial,sans-serif">Montech AIR 903 MAX</text>
+</svg>
