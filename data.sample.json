@@ -1,0 +1,1311 @@
+{
+  "cpu": [
+    {
+      "id": "cpu-1",
+      "name": "Intel Core i3-14100F",
+      "brand": "Intel",
+      "price": 3690,
+      "wattage": 58,
+      "stock": 8,
+      "image": "parts/cpu-intel-core-i3-14100f.svg"
+    },
+    {
+      "id": "cpu-2",
+      "name": "Intel Core i5-14400F",
+      "brand": "Intel",
+      "price": 6290,
+      "wattage": 65,
+      "stock": 5,
+      "image": "parts/cpu-intel-core-i5-14400f.svg"
+    },
+    {
+      "id": "cpu-3",
+      "name": "Intel Core i5-14600KF",
+      "brand": "Intel",
+      "price": 9990,
+      "wattage": 125,
+      "stock": 12,
+      "image": "parts/cpu-intel-core-i5-14600kf.svg"
+    },
+    {
+      "id": "cpu-4",
+      "name": "Intel Core i7-14700K",
+      "brand": "Intel",
+      "price": 14900,
+      "wattage": 125,
+      "stock": 3,
+      "image": "parts/cpu-intel-core-i7-14700k.svg"
+    },
+    {
+      "id": "cpu-5",
+      "name": "Intel Core i9-14900K",
+      "brand": "Intel",
+      "price": 20900,
+      "wattage": 125,
+      "stock": 7,
+      "image": "parts/cpu-intel-core-i9-14900k.svg"
+    },
+    {
+      "id": "cpu-6",
+      "name": "Intel Core Ultra 5 245K",
+      "brand": "Intel",
+      "price": 10900,
+      "wattage": 125,
+      "stock": 15,
+      "image": "parts/cpu-intel-core-ultra-5-245k.svg"
+    },
+    {
+      "id": "cpu-7",
+      "name": "Intel Core Ultra 7 265K",
+      "brand": "Intel",
+      "price": 15900,
+      "wattage": 125,
+      "stock": 4,
+      "image": "parts/cpu-intel-core-ultra-7-265k.svg"
+    },
+    {
+      "id": "cpu-8",
+      "name": "Intel Core Ultra 9 285K",
+      "brand": "Intel",
+      "price": 23900,
+      "wattage": 125,
+      "stock": 10,
+      "image": "parts/cpu-intel-core-ultra-9-285k.svg"
+    },
+    {
+      "id": "cpu-9",
+      "name": "AMD Ryzen 5 5600",
+      "brand": "AMD",
+      "price": 3290,
+      "wattage": 65,
+      "stock": 6,
+      "image": "parts/cpu-amd-ryzen-5-5600.svg"
+    },
+    {
+      "id": "cpu-10",
+      "name": "AMD Ryzen 7 5700X3D",
+      "brand": "AMD",
+      "price": 7490,
+      "wattage": 105,
+      "stock": 2,
+      "image": "parts/cpu-amd-ryzen-7-5700x3d.svg"
+    },
+    {
+      "id": "cpu-11",
+      "name": "AMD Ryzen 5 7600",
+      "brand": "AMD",
+      "price": 6290,
+      "wattage": 65,
+      "stock": 9,
+      "image": "parts/cpu-amd-ryzen-5-7600.svg"
+    },
+    {
+      "id": "cpu-12",
+      "name": "AMD Ryzen 5 8500G",
+      "brand": "AMD",
+      "price": 4990,
+      "wattage": 65,
+      "stock": 11,
+      "image": "parts/cpu-amd-ryzen-5-8500g.svg"
+    },
+    {
+      "id": "cpu-13",
+      "name": "AMD Ryzen 5 9600X",
+      "brand": "AMD",
+      "price": 8490,
+      "wattage": 65,
+      "stock": 8,
+      "image": "parts/cpu-amd-ryzen-5-9600x.svg"
+    },
+    {
+      "id": "cpu-14",
+      "name": "AMD Ryzen 7 7800X3D",
+      "brand": "AMD",
+      "price": 13900,
+      "wattage": 120,
+      "stock": 5,
+      "image": "parts/cpu-amd-ryzen-7-7800x3d.svg"
+    },
+    {
+      "id": "cpu-15",
+      "name": "AMD Ryzen 7 9700X",
+      "brand": "AMD",
+      "price": 11900,
+      "wattage": 65,
+      "stock": 12,
+      "image": "parts/cpu-amd-ryzen-7-9700x.svg"
+    },
+    {
+      "id": "cpu-16",
+      "name": "AMD Ryzen 7 9800X3D",
+      "brand": "AMD",
+      "price": 17900,
+      "wattage": 120,
+      "stock": 3,
+      "image": "parts/cpu-amd-ryzen-7-9800x3d.svg"
+    },
+    {
+      "id": "cpu-17",
+      "name": "AMD Ryzen 9 9900X",
+      "brand": "AMD",
+      "price": 16900,
+      "wattage": 120,
+      "stock": 7,
+      "image": "parts/cpu-amd-ryzen-9-9900x.svg"
+    },
+    {
+      "id": "cpu-18",
+      "name": "AMD Ryzen 9 9950X",
+      "brand": "AMD",
+      "price": 22900,
+      "wattage": 170,
+      "stock": 15,
+      "image": "parts/cpu-amd-ryzen-9-9950x.svg"
+    }
+  ],
+  "vga": [
+    {
+      "id": "vga-1",
+      "name": "GeForce RTX 5090 32GB",
+      "brand": "NVIDIA",
+      "price": 89900,
+      "wattage": 575,
+      "stock": 4,
+      "image": "parts/vga-geforce-rtx-5090-32gb.svg"
+    },
+    {
+      "id": "vga-2",
+      "name": "GeForce RTX 5080 16GB",
+      "brand": "NVIDIA",
+      "price": 46900,
+      "wattage": 360,
+      "stock": 10,
+      "image": "parts/vga-geforce-rtx-5080-16gb.svg"
+    },
+    {
+      "id": "vga-3",
+      "name": "GeForce RTX 5070 Ti 16GB",
+      "brand": "NVIDIA",
+      "price": 32900,
+      "wattage": 300,
+      "stock": 6,
+      "image": "parts/vga-geforce-rtx-5070-ti-16gb.svg"
+    },
+    {
+      "id": "vga-4",
+      "name": "GeForce RTX 5070 12GB",
+      "brand": "NVIDIA",
+      "price": 23900,
+      "wattage": 250,
+      "stock": 2,
+      "image": "parts/vga-geforce-rtx-5070-12gb.svg"
+    },
+    {
+      "id": "vga-5",
+      "name": "GeForce RTX 5060 Ti 16GB",
+      "brand": "NVIDIA",
+      "price": 17900,
+      "wattage": 180,
+      "stock": 9,
+      "image": "parts/vga-geforce-rtx-5060-ti-16gb.svg"
+    },
+    {
+      "id": "vga-6",
+      "name": "GeForce RTX 5060 8GB",
+      "brand": "NVIDIA",
+      "price": 12900,
+      "wattage": 145,
+      "stock": 11,
+      "image": "parts/vga-geforce-rtx-5060-8gb.svg"
+    },
+    {
+      "id": "vga-7",
+      "name": "GeForce RTX 4060 8GB",
+      "brand": "NVIDIA",
+      "price": 10900,
+      "wattage": 115,
+      "stock": 8,
+      "image": "parts/vga-geforce-rtx-4060-8gb.svg"
+    },
+    {
+      "id": "vga-8",
+      "name": "GeForce RTX 4060 Ti 8GB",
+      "brand": "NVIDIA",
+      "price": 14500,
+      "wattage": 160,
+      "stock": 5,
+      "image": "parts/vga-geforce-rtx-4060-ti-8gb.svg"
+    },
+    {
+      "id": "vga-9",
+      "name": "Radeon RX 9070 XT 16GB",
+      "brand": "AMD",
+      "price": 25900,
+      "wattage": 304,
+      "stock": 12,
+      "image": "parts/vga-radeon-rx-9070-xt-16gb.svg"
+    },
+    {
+      "id": "vga-10",
+      "name": "Radeon RX 9070 16GB",
+      "brand": "AMD",
+      "price": 21900,
+      "wattage": 220,
+      "stock": 3,
+      "image": "parts/vga-radeon-rx-9070-16gb.svg"
+    },
+    {
+      "id": "vga-11",
+      "name": "Radeon RX 9060 XT 16GB",
+      "brand": "AMD",
+      "price": 14900,
+      "wattage": 160,
+      "stock": 7,
+      "image": "parts/vga-radeon-rx-9060-xt-16gb.svg"
+    },
+    {
+      "id": "vga-12",
+      "name": "Radeon RX 7800 XT 16GB",
+      "brand": "AMD",
+      "price": 17900,
+      "wattage": 263,
+      "stock": 15,
+      "image": "parts/vga-radeon-rx-7800-xt-16gb.svg"
+    },
+    {
+      "id": "vga-13",
+      "name": "Radeon RX 7600 8GB",
+      "brand": "AMD",
+      "price": 9490,
+      "wattage": 165,
+      "stock": 4,
+      "image": "parts/vga-radeon-rx-7600-8gb.svg"
+    },
+    {
+      "id": "vga-14",
+      "name": "Intel Arc B580 12GB",
+      "brand": "Intel",
+      "price": 9990,
+      "wattage": 190,
+      "stock": 10,
+      "image": "parts/vga-intel-arc-b580-12gb.svg"
+    },
+    {
+      "id": "vga-15",
+      "name": "Intel Arc B570 10GB",
+      "brand": "Intel",
+      "price": 8490,
+      "wattage": 150,
+      "stock": 6,
+      "image": "parts/vga-intel-arc-b570-10gb.svg"
+    }
+  ],
+  "mainboard": [
+    {
+      "id": "mainboard-1",
+      "name": "ASUS PRIME B760M-A WIFI D4",
+      "brand": "ASUS",
+      "price": 4990,
+      "wattage": 40,
+      "stock": 2,
+      "image": "parts/mainboard-asus-prime-b760m-a-wifi-d4.svg"
+    },
+    {
+      "id": "mainboard-2",
+      "name": "ASUS TUF GAMING B760-PLUS WIFI",
+      "brand": "ASUS",
+      "price": 6990,
+      "wattage": 45,
+      "stock": 9,
+      "image": "parts/mainboard-asus-tuf-gaming-b760-plus-wifi.svg"
+    },
+    {
+      "id": "mainboard-3",
+      "name": "ASUS TUF GAMING B650-PLUS WIFI",
+      "brand": "ASUS",
+      "price": 7290,
+      "wattage": 45,
+      "stock": 11,
+      "image": "parts/mainboard-asus-tuf-gaming-b650-plus-wifi.svg"
+    },
+    {
+      "id": "mainboard-4",
+      "name": "ASUS ROG STRIX B850-F GAMING WIFI",
+      "brand": "ASUS",
+      "price": 11900,
+      "wattage": 50,
+      "stock": 8,
+      "image": "parts/mainboard-asus-rog-strix-b850-f-gaming-wifi.svg"
+    },
+    {
+      "id": "mainboard-5",
+      "name": "ASUS TUF GAMING Z890-PLUS WIFI",
+      "brand": "ASUS",
+      "price": 12900,
+      "wattage": 50,
+      "stock": 5,
+      "image": "parts/mainboard-asus-tuf-gaming-z890-plus-wifi.svg"
+    },
+    {
+      "id": "mainboard-6",
+      "name": "MSI PRO B760M-A WIFI DDR4",
+      "brand": "MSI",
+      "price": 4790,
+      "wattage": 40,
+      "stock": 12,
+      "image": "parts/mainboard-msi-pro-b760m-a-wifi-ddr4.svg"
+    },
+    {
+      "id": "mainboard-7",
+      "name": "MSI MAG B650 TOMAHAWK WIFI",
+      "brand": "MSI",
+      "price": 7990,
+      "wattage": 45,
+      "stock": 3,
+      "image": "parts/mainboard-msi-mag-b650-tomahawk-wifi.svg"
+    },
+    {
+      "id": "mainboard-8",
+      "name": "MSI MAG B850 TOMAHAWK WIFI",
+      "brand": "MSI",
+      "price": 10900,
+      "wattage": 50,
+      "stock": 7,
+      "image": "parts/mainboard-msi-mag-b850-tomahawk-wifi.svg"
+    },
+    {
+      "id": "mainboard-9",
+      "name": "MSI MAG Z890 TOMAHAWK WIFI",
+      "brand": "MSI",
+      "price": 13900,
+      "wattage": 50,
+      "stock": 15,
+      "image": "parts/mainboard-msi-mag-z890-tomahawk-wifi.svg"
+    },
+    {
+      "id": "mainboard-10",
+      "name": "GIGABYTE B760M DS3H DDR4",
+      "brand": "GIGABYTE",
+      "price": 3890,
+      "wattage": 40,
+      "stock": 4,
+      "image": "parts/mainboard-gigabyte-b760m-ds3h-ddr4.svg"
+    },
+    {
+      "id": "mainboard-11",
+      "name": "GIGABYTE B650M DS3H",
+      "brand": "GIGABYTE",
+      "price": 4590,
+      "wattage": 40,
+      "stock": 10,
+      "image": "parts/mainboard-gigabyte-b650m-ds3h.svg"
+    },
+    {
+      "id": "mainboard-12",
+      "name": "GIGABYTE B850 AORUS ELITE WIFI7",
+      "brand": "GIGABYTE",
+      "price": 9990,
+      "wattage": 50,
+      "stock": 6,
+      "image": "parts/mainboard-gigabyte-b850-aorus-elite-wifi7.svg"
+    },
+    {
+      "id": "mainboard-13",
+      "name": "ASRock B760M PRO RS",
+      "brand": "ASRock",
+      "price": 4290,
+      "wattage": 40,
+      "stock": 2,
+      "image": "parts/mainboard-asrock-b760m-pro-rs.svg"
+    },
+    {
+      "id": "mainboard-14",
+      "name": "ASRock B650M PG Riptide",
+      "brand": "ASRock",
+      "price": 5290,
+      "wattage": 40,
+      "stock": 9,
+      "image": "parts/mainboard-asrock-b650m-pg-riptide.svg"
+    },
+    {
+      "id": "mainboard-15",
+      "name": "ASRock X870 Steel Legend WIFI",
+      "brand": "ASRock",
+      "price": 13900,
+      "wattage": 55,
+      "stock": 11,
+      "image": "parts/mainboard-asrock-x870-steel-legend-wifi.svg"
+    }
+  ],
+  "ram": [
+    {
+      "id": "ram-1",
+      "name": "Kingston FURY Beast DDR5 32GB (2x16) 6000",
+      "brand": "Kingston",
+      "price": 3890,
+      "wattage": 10,
+      "stock": 8,
+      "image": "parts/ram-kingston-fury-beast-ddr5-32gb-2x16-6000.svg"
+    },
+    {
+      "id": "ram-2",
+      "name": "Kingston FURY Beast DDR4 16GB (2x8) 3200",
+      "brand": "Kingston",
+      "price": 1590,
+      "wattage": 8,
+      "stock": 5,
+      "image": "parts/ram-kingston-fury-beast-ddr4-16gb-2x8-3200.svg"
+    },
+    {
+      "id": "ram-3",
+      "name": "Kingston FURY Renegade DDR5 32GB 6400 RGB",
+      "brand": "Kingston",
+      "price": 5290,
+      "wattage": 12,
+      "stock": 12,
+      "image": "parts/ram-kingston-fury-renegade-ddr5-32gb-6400-rgb.svg"
+    },
+    {
+      "id": "ram-4",
+      "name": "Corsair Vengeance DDR5 32GB (2x16) 6000 CL30",
+      "brand": "Corsair",
+      "price": 4290,
+      "wattage": 10,
+      "stock": 3,
+      "image": "parts/ram-corsair-vengeance-ddr5-32gb-2x16-6000-cl30.svg"
+    },
+    {
+      "id": "ram-5",
+      "name": "Corsair Vengeance RGB DDR5 32GB 6000",
+      "brand": "Corsair",
+      "price": 4990,
+      "wattage": 12,
+      "stock": 7,
+      "image": "parts/ram-corsair-vengeance-rgb-ddr5-32gb-6000.svg"
+    },
+    {
+      "id": "ram-6",
+      "name": "Corsair Dominator Titanium DDR5 32GB 6400",
+      "brand": "Corsair",
+      "price": 8990,
+      "wattage": 12,
+      "stock": 15,
+      "image": "parts/ram-corsair-dominator-titanium-ddr5-32gb-6400.svg"
+    },
+    {
+      "id": "ram-7",
+      "name": "G.SKILL Trident Z5 RGB DDR5 32GB 6400",
+      "brand": "G.SKILL",
+      "price": 5990,
+      "wattage": 12,
+      "stock": 4,
+      "image": "parts/ram-g-skill-trident-z5-rgb-ddr5-32gb-6400.svg"
+    },
+    {
+      "id": "ram-8",
+      "name": "G.SKILL Ripjaws S5 DDR5 32GB 6000 CL30",
+      "brand": "G.SKILL",
+      "price": 3990,
+      "wattage": 10,
+      "stock": 10,
+      "image": "parts/ram-g-skill-ripjaws-s5-ddr5-32gb-6000-cl30.svg"
+    },
+    {
+      "id": "ram-9",
+      "name": "G.SKILL Flare X5 DDR5 32GB 6000 (AMD EXPO)",
+      "brand": "G.SKILL",
+      "price": 4190,
+      "wattage": 10,
+      "stock": 6,
+      "image": "parts/ram-g-skill-flare-x5-ddr5-32gb-6000-amd-expo.svg"
+    },
+    {
+      "id": "ram-10",
+      "name": "T-FORCE Delta RGB DDR5 32GB 6000",
+      "brand": "TEAMGROUP",
+      "price": 3790,
+      "wattage": 12,
+      "stock": 2,
+      "image": "parts/ram-t-force-delta-rgb-ddr5-32gb-6000.svg"
+    },
+    {
+      "id": "ram-11",
+      "name": "Crucial Pro DDR5 32GB (2x16) 5600",
+      "brand": "Crucial",
+      "price": 3290,
+      "wattage": 10,
+      "stock": 9,
+      "image": "parts/ram-crucial-pro-ddr5-32gb-2x16-5600.svg"
+    },
+    {
+      "id": "ram-12",
+      "name": "KLEVV BOLT X DDR4 16GB (2x8) 3200",
+      "brand": "KLEVV",
+      "price": 1390,
+      "wattage": 8,
+      "stock": 11,
+      "image": "parts/ram-klevv-bolt-x-ddr4-16gb-2x8-3200.svg"
+    }
+  ],
+  "ssd": [
+    {
+      "id": "ssd-1",
+      "name": "Samsung 990 PRO 2TB NVMe Gen4",
+      "brand": "Samsung",
+      "price": 6990,
+      "wattage": 8,
+      "stock": 8,
+      "image": "parts/ssd-samsung-990-pro-2tb-nvme-gen4.svg"
+    },
+    {
+      "id": "ssd-2",
+      "name": "Samsung 990 EVO Plus 1TB NVMe",
+      "brand": "Samsung",
+      "price": 3290,
+      "wattage": 7,
+      "stock": 5,
+      "image": "parts/ssd-samsung-990-evo-plus-1tb-nvme.svg"
+    },
+    {
+      "id": "ssd-3",
+      "name": "Samsung 870 EVO 1TB SATA 2.5\"",
+      "brand": "Samsung",
+      "price": 3190,
+      "wattage": 3,
+      "stock": 12,
+      "image": "parts/ssd-samsung-870-evo-1tb-sata-2-5.svg"
+    },
+    {
+      "id": "ssd-4",
+      "name": "WD Black SN850X 1TB NVMe Gen4",
+      "brand": "WD",
+      "price": 3990,
+      "wattage": 8,
+      "stock": 3,
+      "image": "parts/ssd-wd-black-sn850x-1tb-nvme-gen4.svg"
+    },
+    {
+      "id": "ssd-5",
+      "name": "WD Black SN850X 2TB NVMe Gen4",
+      "brand": "WD",
+      "price": 6890,
+      "wattage": 8,
+      "stock": 7,
+      "image": "parts/ssd-wd-black-sn850x-2tb-nvme-gen4.svg"
+    },
+    {
+      "id": "ssd-6",
+      "name": "WD Blue SN580 1TB NVMe",
+      "brand": "WD",
+      "price": 2490,
+      "wattage": 6,
+      "stock": 15,
+      "image": "parts/ssd-wd-blue-sn580-1tb-nvme.svg"
+    },
+    {
+      "id": "ssd-7",
+      "name": "Crucial T500 1TB NVMe Gen4",
+      "brand": "Crucial",
+      "price": 2990,
+      "wattage": 7,
+      "stock": 4,
+      "image": "parts/ssd-crucial-t500-1tb-nvme-gen4.svg"
+    },
+    {
+      "id": "ssd-8",
+      "name": "Crucial T705 2TB NVMe Gen5",
+      "brand": "Crucial",
+      "price": 11900,
+      "wattage": 11,
+      "stock": 10,
+      "image": "parts/ssd-crucial-t705-2tb-nvme-gen5.svg"
+    },
+    {
+      "id": "ssd-9",
+      "name": "Kingston KC3000 1TB NVMe Gen4",
+      "brand": "Kingston",
+      "price": 3190,
+      "wattage": 8,
+      "stock": 6,
+      "image": "parts/ssd-kingston-kc3000-1tb-nvme-gen4.svg"
+    },
+    {
+      "id": "ssd-10",
+      "name": "Kingston NV3 1TB NVMe",
+      "brand": "Kingston",
+      "price": 2190,
+      "wattage": 6,
+      "stock": 2,
+      "image": "parts/ssd-kingston-nv3-1tb-nvme.svg"
+    },
+    {
+      "id": "ssd-11",
+      "name": "Lexar NM790 2TB NVMe Gen4",
+      "brand": "Lexar",
+      "price": 4790,
+      "wattage": 7,
+      "stock": 9,
+      "image": "parts/ssd-lexar-nm790-2tb-nvme-gen4.svg"
+    },
+    {
+      "id": "ssd-12",
+      "name": "Corsair MP600 ELITE 1TB Gen4",
+      "brand": "Corsair",
+      "price": 3590,
+      "wattage": 8,
+      "stock": 11,
+      "image": "parts/ssd-corsair-mp600-elite-1tb-gen4.svg"
+    }
+  ],
+  "hdd": [
+    {
+      "id": "hdd-1",
+      "name": "Seagate BarraCuda 1TB 7200RPM",
+      "brand": "Seagate",
+      "price": 1290,
+      "wattage": 6,
+      "stock": 8,
+      "image": "parts/hdd-seagate-barracuda-1tb-7200rpm.svg"
+    },
+    {
+      "id": "hdd-2",
+      "name": "Seagate BarraCuda 2TB 7200RPM",
+      "brand": "Seagate",
+      "price": 1890,
+      "wattage": 7,
+      "stock": 5,
+      "image": "parts/hdd-seagate-barracuda-2tb-7200rpm.svg"
+    },
+    {
+      "id": "hdd-3",
+      "name": "Seagate IronWolf 4TB NAS",
+      "brand": "Seagate",
+      "price": 4290,
+      "wattage": 8,
+      "stock": 12,
+      "image": "parts/hdd-seagate-ironwolf-4tb-nas.svg"
+    },
+    {
+      "id": "hdd-4",
+      "name": "Seagate SkyHawk 4TB Surveillance",
+      "brand": "Seagate",
+      "price": 3990,
+      "wattage": 8,
+      "stock": 3,
+      "image": "parts/hdd-seagate-skyhawk-4tb-surveillance.svg"
+    },
+    {
+      "id": "hdd-5",
+      "name": "WD Blue 2TB 7200RPM",
+      "brand": "WD",
+      "price": 1990,
+      "wattage": 7,
+      "stock": 7,
+      "image": "parts/hdd-wd-blue-2tb-7200rpm.svg"
+    },
+    {
+      "id": "hdd-6",
+      "name": "WD Blue 4TB 5400RPM",
+      "brand": "WD",
+      "price": 3290,
+      "wattage": 6,
+      "stock": 15,
+      "image": "parts/hdd-wd-blue-4tb-5400rpm.svg"
+    },
+    {
+      "id": "hdd-7",
+      "name": "WD Red Plus 4TB NAS",
+      "brand": "WD",
+      "price": 4390,
+      "wattage": 8,
+      "stock": 4,
+      "image": "parts/hdd-wd-red-plus-4tb-nas.svg"
+    },
+    {
+      "id": "hdd-8",
+      "name": "WD Purple 4TB Surveillance",
+      "brand": "WD",
+      "price": 3890,
+      "wattage": 8,
+      "stock": 10,
+      "image": "parts/hdd-wd-purple-4tb-surveillance.svg"
+    },
+    {
+      "id": "hdd-9",
+      "name": "WD Black 6TB 7200RPM",
+      "brand": "WD",
+      "price": 7290,
+      "wattage": 9,
+      "stock": 6,
+      "image": "parts/hdd-wd-black-6tb-7200rpm.svg"
+    },
+    {
+      "id": "hdd-10",
+      "name": "Toshiba P300 2TB 7200RPM",
+      "brand": "Toshiba",
+      "price": 1790,
+      "wattage": 7,
+      "stock": 2,
+      "image": "parts/hdd-toshiba-p300-2tb-7200rpm.svg"
+    },
+    {
+      "id": "hdd-11",
+      "name": "Toshiba X300 8TB 7200RPM",
+      "brand": "Toshiba",
+      "price": 8290,
+      "wattage": 9,
+      "stock": 9,
+      "image": "parts/hdd-toshiba-x300-8tb-7200rpm.svg"
+    }
+  ],
+  "aio": [
+    {
+      "id": "aio-1",
+      "name": "ARCTIC Liquid Freezer III 240",
+      "brand": "Arctic",
+      "price": 3490,
+      "wattage": 12,
+      "stock": 11,
+      "image": "parts/aio-arctic-liquid-freezer-iii-240.svg"
+    },
+    {
+      "id": "aio-2",
+      "name": "ARCTIC Liquid Freezer III 360",
+      "brand": "Arctic",
+      "price": 4590,
+      "wattage": 15,
+      "stock": 8,
+      "image": "parts/aio-arctic-liquid-freezer-iii-360.svg"
+    },
+    {
+      "id": "aio-3",
+      "name": "NZXT Kraken 240 RGB",
+      "brand": "NZXT",
+      "price": 5990,
+      "wattage": 14,
+      "stock": 5,
+      "image": "parts/aio-nzxt-kraken-240-rgb.svg"
+    },
+    {
+      "id": "aio-4",
+      "name": "NZXT Kraken Elite 360 RGB",
+      "brand": "NZXT",
+      "price": 12900,
+      "wattage": 18,
+      "stock": 12,
+      "image": "parts/aio-nzxt-kraken-elite-360-rgb.svg"
+    },
+    {
+      "id": "aio-5",
+      "name": "Corsair iCUE H100i ELITE LCD XT 240",
+      "brand": "Corsair",
+      "price": 8990,
+      "wattage": 15,
+      "stock": 3,
+      "image": "parts/aio-corsair-icue-h100i-elite-lcd-xt-240.svg"
+    },
+    {
+      "id": "aio-6",
+      "name": "Corsair iCUE H150i ELITE CAPELLIX XT 360",
+      "brand": "Corsair",
+      "price": 9990,
+      "wattage": 18,
+      "stock": 7,
+      "image": "parts/aio-corsair-icue-h150i-elite-capellix-xt-360.svg"
+    },
+    {
+      "id": "aio-7",
+      "name": "Lian Li GALAHAD II TRINITY 360",
+      "brand": "Lian Li",
+      "price": 7990,
+      "wattage": 18,
+      "stock": 15,
+      "image": "parts/aio-lian-li-galahad-ii-trinity-360.svg"
+    },
+    {
+      "id": "aio-8",
+      "name": "DeepCool LT720 360 ARGB",
+      "brand": "DeepCool",
+      "price": 5990,
+      "wattage": 16,
+      "stock": 4,
+      "image": "parts/aio-deepcool-lt720-360-argb.svg"
+    },
+    {
+      "id": "aio-9",
+      "name": "DeepCool LE520 240 ARGB",
+      "brand": "DeepCool",
+      "price": 2790,
+      "wattage": 12,
+      "stock": 10,
+      "image": "parts/aio-deepcool-le520-240-argb.svg"
+    },
+    {
+      "id": "aio-10",
+      "name": "Thermalright Frozen Notte 360 ARGB",
+      "brand": "Thermalright",
+      "price": 3290,
+      "wattage": 15,
+      "stock": 6,
+      "image": "parts/aio-thermalright-frozen-notte-360-argb.svg"
+    },
+    {
+      "id": "aio-11",
+      "name": "ID-COOLING FX240 ARGB",
+      "brand": "ID-COOLING",
+      "price": 2190,
+      "wattage": 12,
+      "stock": 2,
+      "image": "parts/aio-id-cooling-fx240-argb.svg"
+    },
+    {
+      "id": "aio-12",
+      "name": "ID-COOLING FX360 PRO ARGB",
+      "brand": "ID-COOLING",
+      "price": 2890,
+      "wattage": 15,
+      "stock": 9,
+      "image": "parts/aio-id-cooling-fx360-pro-argb.svg"
+    },
+    {
+      "id": "aio-13",
+      "name": "MSI MAG CORELIQUID E360 ARGB",
+      "brand": "MSI",
+      "price": 4990,
+      "wattage": 16,
+      "stock": 11,
+      "image": "parts/aio-msi-mag-coreliquid-e360-argb.svg"
+    }
+  ],
+  "aircooler": [
+    {
+      "id": "aircooler-1",
+      "name": "Thermalright Peerless Assassin 120 SE",
+      "brand": "Thermalright",
+      "price": 1090,
+      "wattage": 3,
+      "stock": 11,
+      "image": "parts/aircooler-thermalright-peerless-assassin-120-se.svg"
+    },
+    {
+      "id": "aircooler-2",
+      "name": "Thermalright Phantom Spirit 120 EVO",
+      "brand": "Thermalright",
+      "price": 1290,
+      "wattage": 3,
+      "stock": 8,
+      "image": "parts/aircooler-thermalright-phantom-spirit-120-evo.svg"
+    },
+    {
+      "id": "aircooler-3",
+      "name": "Thermalright Assassin X120 R SE",
+      "brand": "Thermalright",
+      "price": 390,
+      "wattage": 2,
+      "stock": 5,
+      "image": "parts/aircooler-thermalright-assassin-x120-r-se.svg"
+    },
+    {
+      "id": "aircooler-4",
+      "name": "Noctua NH-D15 G2",
+      "brand": "Noctua",
+      "price": 5490,
+      "wattage": 3,
+      "stock": 12,
+      "image": "parts/aircooler-noctua-nh-d15-g2.svg"
+    },
+    {
+      "id": "aircooler-5",
+      "name": "Noctua NH-U12S redux",
+      "brand": "Noctua",
+      "price": 1890,
+      "wattage": 3,
+      "stock": 3,
+      "image": "parts/aircooler-noctua-nh-u12s-redux.svg"
+    },
+    {
+      "id": "aircooler-6",
+      "name": "Noctua NH-L9i-17xx (Low Profile)",
+      "brand": "Noctua",
+      "price": 1790,
+      "wattage": 2,
+      "stock": 7,
+      "image": "parts/aircooler-noctua-nh-l9i-17xx-low-profile.svg"
+    },
+    {
+      "id": "aircooler-7",
+      "name": "DeepCool AK620 DIGITAL",
+      "brand": "DeepCool",
+      "price": 2290,
+      "wattage": 3,
+      "stock": 15,
+      "image": "parts/aircooler-deepcool-ak620-digital.svg"
+    },
+    {
+      "id": "aircooler-8",
+      "name": "DeepCool AK400",
+      "brand": "DeepCool",
+      "price": 990,
+      "wattage": 2,
+      "stock": 4,
+      "image": "parts/aircooler-deepcool-ak400.svg"
+    },
+    {
+      "id": "aircooler-9",
+      "name": "be quiet! Dark Rock Pro 5",
+      "brand": "be quiet!",
+      "price": 3590,
+      "wattage": 3,
+      "stock": 10,
+      "image": "parts/aircooler-be-quiet-dark-rock-pro-5.svg"
+    },
+    {
+      "id": "aircooler-10",
+      "name": "ID-COOLING SE-224-XT ARGB",
+      "brand": "ID-COOLING",
+      "price": 690,
+      "wattage": 2,
+      "stock": 6,
+      "image": "parts/aircooler-id-cooling-se-224-xt-argb.svg"
+    },
+    {
+      "id": "aircooler-11",
+      "name": "Cooler Master Hyper 212 Halo Black",
+      "brand": "Cooler Master",
+      "price": 1390,
+      "wattage": 3,
+      "stock": 2,
+      "image": "parts/aircooler-cooler-master-hyper-212-halo-black.svg"
+    },
+    {
+      "id": "aircooler-12",
+      "name": "ARCTIC Freezer 36 CO",
+      "brand": "ARCTIC",
+      "price": 1190,
+      "wattage": 3,
+      "stock": 9,
+      "image": "parts/aircooler-arctic-freezer-36-co.svg"
+    }
+  ],
+  "fan": [
+    {
+      "id": "fan-1",
+      "name": "ARCTIC P12 PWM PST 120mm",
+      "brand": "Arctic",
+      "price": 250,
+      "wattage": 2,
+      "stock": 8,
+      "image": "parts/fan-arctic-p12-pwm-pst-120mm.svg"
+    },
+    {
+      "id": "fan-2",
+      "name": "ARCTIC P14 PWM PST 140mm",
+      "brand": "Arctic",
+      "price": 320,
+      "wattage": 2,
+      "stock": 5,
+      "image": "parts/fan-arctic-p14-pwm-pst-140mm.svg"
+    },
+    {
+      "id": "fan-3",
+      "name": "Noctua NF-A12x25 PWM 120mm",
+      "brand": "Noctua",
+      "price": 1290,
+      "wattage": 2,
+      "stock": 12,
+      "image": "parts/fan-noctua-nf-a12x25-pwm-120mm.svg"
+    },
+    {
+      "id": "fan-4",
+      "name": "Noctua NF-A14 PWM 140mm",
+      "brand": "Noctua",
+      "price": 1090,
+      "wattage": 2,
+      "stock": 3,
+      "image": "parts/fan-noctua-nf-a14-pwm-140mm.svg"
+    },
+    {
+      "id": "fan-5",
+      "name": "Lian Li UNI FAN SL-Infinity 120 (3 Pack)",
+      "brand": "Lian Li",
+      "price": 3590,
+      "wattage": 6,
+      "stock": 7,
+      "image": "parts/fan-lian-li-uni-fan-sl-infinity-120-3-pack.svg"
+    },
+    {
+      "id": "fan-6",
+      "name": "Corsair RS120 ARGB 120mm (3 Pack)",
+      "brand": "Corsair",
+      "price": 2290,
+      "wattage": 6,
+      "stock": 15,
+      "image": "parts/fan-corsair-rs120-argb-120mm-3-pack.svg"
+    },
+    {
+      "id": "fan-7",
+      "name": "Thermalright TL-C12C-S 120mm (3 Pack)",
+      "brand": "Thermalright",
+      "price": 590,
+      "wattage": 6,
+      "stock": 4,
+      "image": "parts/fan-thermalright-tl-c12c-s-120mm-3-pack.svg"
+    },
+    {
+      "id": "fan-8",
+      "name": "ID-COOLING ZF-12025 ARGB 120mm",
+      "brand": "ID-COOLING",
+      "price": 290,
+      "wattage": 2,
+      "stock": 10,
+      "image": "parts/fan-id-cooling-zf-12025-argb-120mm.svg"
+    },
+    {
+      "id": "fan-9",
+      "name": "DeepCool FC120 ARGB 120mm (3 Pack)",
+      "brand": "DeepCool",
+      "price": 990,
+      "wattage": 6,
+      "stock": 6,
+      "image": "parts/fan-deepcool-fc120-argb-120mm-3-pack.svg"
+    },
+    {
+      "id": "fan-10",
+      "name": "be quiet! Light Wings 140mm PWM ARGB",
+      "brand": "be quiet!",
+      "price": 1190,
+      "wattage": 2,
+      "stock": 2,
+      "image": "parts/fan-be-quiet-light-wings-140mm-pwm-argb.svg"
+    }
+  ],
+  "psu": [
+    {
+      "id": "psu-1",
+      "name": "Corsair RM750e 750W 80+ Gold Full Modular",
+      "brand": "Corsair",
+      "price": 3790,
+      "wattage": 0,
+      "stock": 9,
+      "image": "parts/psu-corsair-rm750e-750w-80-gold-full-modular.svg"
+    },
+    {
+      "id": "psu-2",
+      "name": "Corsair RM850e 850W 80+ Gold Full Modular",
+      "brand": "Corsair",
+      "price": 4590,
+      "wattage": 0,
+      "stock": 11,
+      "image": "parts/psu-corsair-rm850e-850w-80-gold-full-modular.svg"
+    },
+    {
+      "id": "psu-3",
+      "name": "Corsair RM1000x 1000W 80+ Gold ATX 3.1",
+      "brand": "Corsair",
+      "price": 6990,
+      "wattage": 0,
+      "stock": 8,
+      "image": "parts/psu-corsair-rm1000x-1000w-80-gold-atx-3-1.svg"
+    },
+    {
+      "id": "psu-4",
+      "name": "Seasonic FOCUS GX-750 750W 80+ Gold",
+      "brand": "Seasonic",
+      "price": 4290,
+      "wattage": 0,
+      "stock": 5,
+      "image": "parts/psu-seasonic-focus-gx-750-750w-80-gold.svg"
+    },
+    {
+      "id": "psu-5",
+      "name": "Seasonic VERTEX GX-1000 1000W 80+ Gold",
+      "brand": "Seasonic",
+      "price": 7990,
+      "wattage": 0,
+      "stock": 12,
+      "image": "parts/psu-seasonic-vertex-gx-1000-1000w-80-gold.svg"
+    },
+    {
+      "id": "psu-6",
+      "name": "MSI MAG A750GL PCIE5 750W 80+ Gold",
+      "brand": "MSI",
+      "price": 3290,
+      "wattage": 0,
+      "stock": 3,
+      "image": "parts/psu-msi-mag-a750gl-pcie5-750w-80-gold.svg"
+    },
+    {
+      "id": "psu-7",
+      "name": "MSI MAG A850GL PCIE5 850W 80+ Gold",
+      "brand": "MSI",
+      "price": 3990,
+      "wattage": 0,
+      "stock": 7,
+      "image": "parts/psu-msi-mag-a850gl-pcie5-850w-80-gold.svg"
+    },
+    {
+      "id": "psu-8",
+      "name": "ASUS TUF Gaming 750W 80+ Gold",
+      "brand": "ASUS",
+      "price": 3890,
+      "wattage": 0,
+      "stock": 15,
+      "image": "parts/psu-asus-tuf-gaming-750w-80-gold.svg"
+    },
+    {
+      "id": "psu-9",
+      "name": "Cooler Master MWE Gold 650 V2",
+      "brand": "Cooler Master",
+      "price": 2490,
+      "wattage": 0,
+      "stock": 4,
+      "image": "parts/psu-cooler-master-mwe-gold-650-v2.svg"
+    },
+    {
+      "id": "psu-10",
+      "name": "Thermaltake Toughpower GF3 850W Gold",
+      "brand": "Thermaltake",
+      "price": 4790,
+      "wattage": 0,
+      "stock": 10,
+      "image": "parts/psu-thermaltake-toughpower-gf3-850w-gold.svg"
+    },
+    {
+      "id": "psu-11",
+      "name": "be quiet! Pure Power 12 M 850W Gold",
+      "brand": "be quiet!",
+      "price": 4290,
+      "wattage": 0,
+      "stock": 6,
+      "image": "parts/psu-be-quiet-pure-power-12-m-850w-gold.svg"
+    },
+    {
+      "id": "psu-12",
+      "name": "GIGABYTE UD750GM PG5 750W Gold",
+      "brand": "GIGABYTE",
+      "price": 2990,
+      "wattage": 0,
+      "stock": 2,
+      "image": "parts/psu-gigabyte-ud750gm-pg5-750w-gold.svg"
+    }
+  ],
+  "case": [
+    {
+      "id": "case-1",
+      "name": "Lian Li O11 Dynamic EVO RGB",
+      "brand": "Lian Li",
+      "price": 6990,
+      "wattage": 0,
+      "stock": 9,
+      "image": "parts/case-lian-li-o11-dynamic-evo-rgb.svg"
+    },
+    {
+      "id": "case-2",
+      "name": "Lian Li LANCOOL 216 RGB",
+      "brand": "Lian Li",
+      "price": 3690,
+      "wattage": 0,
+      "stock": 11,
+      "image": "parts/case-lian-li-lancool-216-rgb.svg"
+    },
+    {
+      "id": "case-3",
+      "name": "Lian Li LANCOOL 207",
+      "brand": "Lian Li",
+      "price": 3290,
+      "wattage": 0,
+      "stock": 8,
+      "image": "parts/case-lian-li-lancool-207.svg"
+    },
+    {
+      "id": "case-4",
+      "name": "NZXT H5 Flow RGB (2024)",
+      "brand": "NZXT",
+      "price": 3590,
+      "wattage": 0,
+      "stock": 5,
+      "image": "parts/case-nzxt-h5-flow-rgb-2024.svg"
+    },
+    {
+      "id": "case-5",
+      "name": "NZXT H7 Flow RGB (2024)",
+      "brand": "NZXT",
+      "price": 5290,
+      "wattage": 0,
+      "stock": 12,
+      "image": "parts/case-nzxt-h7-flow-rgb-2024.svg"
+    },
+    {
+      "id": "case-6",
+      "name": "Corsair 4000D AIRFLOW",
+      "brand": "Corsair",
+      "price": 3290,
+      "wattage": 0,
+      "stock": 3,
+      "image": "parts/case-corsair-4000d-airflow.svg"
+    },
+    {
+      "id": "case-7",
+      "name": "Fractal Design North",
+      "brand": "Fractal Design",
+      "price": 5490,
+      "wattage": 0,
+      "stock": 7,
+      "image": "parts/case-fractal-design-north.svg"
+    },
+    {
+      "id": "case-8",
+      "name": "Fractal Design Pop Air RGB",
+      "brand": "Fractal Design",
+      "price": 2890,
+      "wattage": 0,
+      "stock": 15,
+      "image": "parts/case-fractal-design-pop-air-rgb.svg"
+    },
+    {
+      "id": "case-9",
+      "name": "Montech AIR 903 MAX",
+      "brand": "Montech",
+      "price": 2190,
+      "wattage": 0,
+      "stock": 4,
+      "image": "parts/case-montech-air-903-max.svg"
+    },
+    {
+      "id": "case-10",
+      "name": "Montech KING 95 PRO",
+      "brand": "Montech",
+      "price": 3390,
+      "wattage": 0,
+      "stock": 10,
+      "image": "parts/case-montech-king-95-pro.svg"
+    },
+    {
+      "id": "case-11",
+      "name": "Antec C8 ARGB",
+      "brand": "Antec",
+      "price": 3990,
+      "wattage": 0,
+      "stock": 6,
+      "image": "parts/case-antec-c8-argb.svg"
+    },
+    {
+      "id": "case-12",
+      "name": "Cooler Master TD500 MESH V2",
+      "brand": "Cooler Master",
+      "price": 3290,
+      "wattage": 0,
+      "stock": 2,
+      "image": "parts/case-cooler-master-td500-mesh-v2.svg"
+    },
+    {
+      "id": "case-13",
+      "name": "DeepCool CH560 Digital",
+      "brand": "DeepCool",
+      "price": 2990,
+      "wattage": 0,
+      "stock": 9,
+      "image": "parts/case-deepcool-ch560-digital.svg"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+{% if item %}
+<a class="btn ghost" href="{{ url_for('page', name='page1') }}">← กลับไปหน้ารายการสินค้า</a>
+
+<div class="hero-box tech" style="margin-top:12px">
+  <span class="badge gold">{{ item.category_label }}</span>
+  <h1>{{ item.name }}</h1>
+  <p class="lead">{{ item.brand }}</p>
+</div>
+
+<div class="panel" style="margin-top:16px; display:flex; gap:24px; flex-wrap:wrap; align-items:flex-start">
+  <img src="{{ url_for('static', filename=item.picture) }}" alt="{{ item.name }}"
+       style="max-width:280px; width:100%; border-radius:12px">
+
+  <div style="flex:1; min-width:220px">
+    <div class="stat-grid">
+      <div class="stat gold"><div class="label">ราคา</div><div class="value">{{ item.price_text }}</div></div>
+      <div class="stat"><div class="label">การใช้ไฟ</div><div class="value">{{ item.wattage }}</div><div class="unit">วัตต์
+        {% if item.high_power %}<span class="badge bad">กินไฟสูง</span>{% endif %}</div></div>
+      <div class="stat {% if item.in_stock %}good{% else %}bad{% endif %}">
+        <div class="label">สถานะสต็อก</div><div class="value">{{ item.stock_label }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section style="margin-top:22px">
+  <div class="spec-card-title"><span class="icon">📋</span> คุณสมบัติสินค้า</div>
+  <div class="spec-card">
+    <div class="spec-row"><div class="spec-label">รหัสสินค้า</div><div class="spec-value">{{ item.id }}</div></div>
+    <div class="spec-row"><div class="spec-label">ยี่ห้อ</div><div class="spec-value">{{ item.brand }}</div></div>
+    <div class="spec-row"><div class="spec-label">หมวดหมู่</div><div class="spec-value">{{ item.category_label }}</div></div>
+    <div class="spec-row"><div class="spec-label">ราคา</div><div class="spec-value">{{ item.price_text }}</div></div>
+    <div class="spec-row"><div class="spec-label">การใช้พลังงาน</div><div class="spec-value">{{ item.wattage }} วัตต์{% if item.high_power %} (กินไฟสูง){% endif %}</div></div>
+    <div class="spec-row"><div class="spec-label">คงเหลือในคลัง</div><div class="spec-value">{{ item.stock }} ชิ้น ({{ item.stock_label }})</div></div>
+    {% for spec in product_specs %}
+    <div class="spec-row"><div class="spec-label">{{ spec.label }}</div><div class="spec-value">{{ spec.value }}</div></div>
+    {% endfor %}
+  </div>
+</section>
+
+{% if related %}
+<section class="panel" style="margin-top:18px">
+  <h3>สินค้าอื่นในหมวดเดียวกัน</h3>
+  <div class="card-grid">
+    {% for r in related %}
+    <a class="item-card part" href="{{ url_for('page', name='detail') }}?id={{ r.id }}">
+      <img src="{{ url_for('static', filename=r.picture) }}" alt="{{ r.name }}" loading="lazy">
+      <div class="body">
+        <b>{{ r.name }}</b>
+        <span class="price">{{ r.price_text }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% else %}
+<div class="empty">ไม่พบสินค้าชิ้นนี้ — ลองกลับไปเลือกใหม่จากหน้ารายการสินค้า</div>
+<p><a class="btn" href="{{ url_for('page', name='page1') }}">ไปหน้ารายการสินค้า</a></p>
+{% endif %}
+{% endblock %}

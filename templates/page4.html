@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero-box tech">
+  <h1>🧩 {{ title }}</h1>
+  <p class="lead">เลือกอุปกรณ์ทีละหมวด ระบบจะรวมราคา คำนวณกำลังไฟ และแนะนำขนาดพาวเวอร์ซัพพลายให้</p>
+</div>
+
+<div class="two-col">
+  <form method="get" class="panel">
+    {% for p in picker %}
+    <div class="field">
+      <label>{{ p.label }} {% if p.required %}<span class="badge bad">จำเป็น</span>{% endif %}</label>
+      <select name="{{ p.key }}">
+        <option value="">— ไม่เลือก —</option>
+        {% for o in p.options %}
+        <option value="{{ o.id }}" {% if o.selected %}selected{% endif %}>{{ o.name }} — {{ o.price }} บาท</option>
+        {% endfor %}
+      </select>
+    </div>
+    {% endfor %}
+    <button class="btn" type="submit">คำนวณสเปกนี้</button>
+    <a class="btn ghost" href="{{ url_for('page', name='page4') }}">เริ่มใหม่</a>
+  </form>
+
+  <div class="panel">
+    <h3>สรุปสเปก</h3>
+    <div class="sum-row"><span>จำนวนอุปกรณ์ที่เลือก</span><span class="num">{{ chosen_count }} ชิ้น</span></div>
+    <div class="sum-row"><span>กำลังไฟรวม</span><span class="num">{{ total_wattage }} W</span></div>
+    <div class="sum-row"><span>PSU ที่แนะนำ (เผื่อ 30%)</span><span class="num">{{ psu_size }} W</span></div>
+    <div class="sum-row total"><span>ราคารวม</span><span class="num">{{ total_price }} บาท</span></div>
+    <p class="note" style="margin-top:8px">งบเทียบกับ 100,000 บาท</p>
+    <div class="progress"><div style="width: {{ budget_percent }}%"></div></div>
+
+    {% if is_complete %}
+    <p class="badge good" style="margin-top:12px">สเปกครบพร้อมประกอบ ✓</p>
+    {% elif warnings %}
+    <h4 style="margin-top:14px">ยังขาด</h4>
+    {% for w in warnings %}
+    <div class="sum-row"><span>⚠️ {{ w }}</span></div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+<h2 style="margin-top:22px">อุปกรณ์ในสเปกนี้</h2>
+{% if rows %}
+<div class="card-grid">
+  {% for item in rows %}
+  <article class="item-card part">
+    <img src="{{ url_for('static', filename=item.picture) }}" alt="{{ item.name }}" loading="lazy">
+    <div class="body">
+      <span class="badge">{{ item.category_label }}</span>
+      <b>{{ item.name }}</b>
+      <span class="muted">{{ item.brand }} · {{ item.wattage }} W</span>
+      <span class="price">{{ item.price_text }}</span>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty">ยังไม่ได้เลือกอุปกรณ์ — เลือกจากแบบฟอร์มด้านบนแล้วกด “คำนวณสเปกนี้”</div>
+{% endif %}
+{% endblock %}

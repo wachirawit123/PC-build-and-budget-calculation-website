@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero-box tech">
+  <h1>📊 {{ title }}</h1>
+  <p class="lead">สรุปมูลค่าคลังสินค้าของร้าน ทบทวน888 — คำนวณด้วย Python ทั้งหมด</p>
+</div>
+
+<div class="stat-grid" style="margin-bottom:18px">
+  <div class="stat"><div class="label">สินค้าทั้งหมด</div><div class="value">{{ total_items }}</div><div class="unit">รายการ · {{ category_count }} หมวดหมู่</div></div>
+  <div class="stat gold"><div class="label">มูลค่าคลังรวม</div><div class="value">{{ total_price }}</div><div class="unit">บาท</div></div>
+  <div class="stat"><div class="label">ราคาเฉลี่ย</div><div class="value">{{ average_price }}</div><div class="unit">บาท / ชิ้น</div></div>
+  <div class="stat"><div class="label">กำลังไฟรวมทุกชิ้น</div><div class="value">{{ total_wattage }}</div><div class="unit">วัตต์</div></div>
+  <div class="stat bad"><div class="label">ราคาเกิน {{ expensive_limit }} บาท</div><div class="value">{{ expensive_count }}</div><div class="unit">รายการ</div></div>
+  <div class="stat {% if low_stock_count > 0 %}bad{% else %}good{% endif %}"><div class="label">สต็อกเหลือน้อย (≤3)</div><div class="value">{{ low_stock_count }}</div><div class="unit">รายการ</div></div>
+</div>
+
+<div class="panel" style="margin-bottom:18px">
+  <h3>มูลค่าสินค้าแยกตามหมวดหมู่</h3>
+  {% for r in rows %}
+  <div class="bar-row">
+    <span>{{ r.label }}</span>
+    <span class="bar-track"><span class="bar-fill {% if r.percent > 70 %}gold{% endif %}" style="width: {{ r.percent }}%"></span></span>
+    <span class="num">{{ r.price }}</span>
+  </div>
+  {% endfor %}
+  <p class="note">ความยาวแท่ง = เปอร์เซ็นต์เทียบกับหมวดที่มีมูลค่าสูงสุด (คำนวณใน page3.py)</p>
+</div>
+
+<div class="two-col">
+  <div class="panel">
+    <h3>🏆 5 อันดับสินค้าที่ราคาสูงสุด</h3>
+    <table>
+      <thead><tr><th>#</th><th>รูป</th><th>ชื่อสินค้า</th><th>หมวดหมู่</th><th class="num">ราคา</th></tr></thead>
+      <tbody>
+        {% for item in ranking %}
+        <tr>
+          <td><span class="badge {% if item.rank == 1 %}gold{% endif %}">{{ item.rank }}</span></td>
+          <td><img class="thumb" src="{{ url_for('static', filename=item.picture) }}" alt="{{ item.name }}"></td>
+          <td><b>{{ item.name }}</b><br><span class="muted">{{ item.brand }}</span></td>
+          <td>{{ item.category_label }}</td>
+          <td class="num">{{ item.price_text }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h3>สินค้าราคาสูงสุดในร้าน</h3>
+    {% if top_item %}
+    <img style="width:100%;border-radius:10px" src="{{ url_for('static', filename=top_item.picture) }}" alt="{{ top_item.name }}">
+    <p><b>{{ top_item.name }}</b><br><span class="muted">{{ top_item.category_label }} · {{ top_item.brand }}</span></p>
+    <p class="value" style="font-size:24px;font-weight:700;color:var(--maroon)">{{ top_item.price_text }}</p>
+    {% else %}
+    <div class="empty">ยังไม่มีสินค้า</div>
+    {% endif %}
+
+    <h3 style="margin-top:18px">⚠️ ต้องสั่งเพิ่ม</h3>
+    {% if low_stock %}
+      {% for item in low_stock %}
+      <div class="sum-row"><span>{{ item.name }}</span><span class="badge bad">{{ item.stock_label }}</span></div>
+      {% endfor %}
+    {% else %}
+    <p class="muted">สต็อกเพียงพอทุกรายการ</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
